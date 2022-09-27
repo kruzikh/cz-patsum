@@ -12,16 +12,17 @@ Description: "This profile constrains the Observation resource to represent vari
 // * category only CodeableConceptIPS
 // * code only CodeableConceptIPS
 // * code MS
-* subject 1.. MS
+//* subject 1.. MS
 * subject only Reference(CZ_Patient or Group or Device or Location)
-* subject.reference 1.. MS
+/* * subject.reference 1.. MS
 * effective[x] 1.. MS
 * effective[x] only dateTime or Period
 * effective[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
 * effective[x].extension[data-absent-reason] ^short = "effective[x] absence reason"
 * effective[x].extension[data-absent-reason] ^definition = "Provides a reason why the effectiveTime is missing."
+ */
 * performer only Reference(CareTeam or CZ_Patient or RelatedPerson)
 // * performer only Reference(CZ_Practitioner or PractitionerRoleCzIps or CZ_Organization or CareTeam or CZ_Patient or RelatedPerson)
-* value[x] MS
+/* * value[x] MS
 * hasMember only Reference(ObservationResultsCzIps or QuestionnaireResponse or MolecularSequence)
-* component MS
+* component MS */

@@ -3,12 +3,13 @@ Parent: ObservationPregnancyStatusUvIps
 Id: cz-Observation-pregnancy-status
 Title: "Observation (Pregnancy: status)"
 Description: "This profile constrains the Observation resource to represent the pregnancy status."
-* code 1..1 MS
+/* * code 1..1 MS
 * code only CodeableConceptIPS
 * code = $loinc#82810-3
 * subject 1.. MS
+ */
 * subject only Reference(CZ_Patient)
-* subject.reference 1.. MS
+/* * subject.reference 1.. MS
 * effective[x] 1..1 MS
 * effective[x] only dateTime
 * effective[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
@@ -31,4 +32,4 @@ Description: "This profile constrains the Observation resource to represent the 
 * hasMember ^definition = "A reference to the Expected Delivery Date Observation."
 * hasMember.reference 1.. MS
 * component ..0
-* component ^mustSupport = false
+* component ^mustSupport = false */

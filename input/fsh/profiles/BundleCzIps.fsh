@@ -60,7 +60,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[device].resource 1..
 * entry[device].resource only DeviceCzIps
 * entry[deviceusestatement].resource 1..
-* entry[deviceusestatement].resource only DeviceUseStatementCzIps
+* entry[deviceusestatement].resource only CZ_DeviceUseStatement
 // * entry[diagnosticreport].resource 1..
 // * entry[diagnosticreport].resource only DiagnosticReportUvIps
 * entry[imagingstudy].resource 1..
