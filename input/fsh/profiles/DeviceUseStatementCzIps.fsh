@@ -16,7 +16,7 @@ Description: "This profile represents the constraints applied to the DeviceUseSt
 //* timing[x] 1..1 MS
 //* timing[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
 //* timing[x].extension[data-absent-reason] ^definition = "Provides a reason why the timing is missing."
-* device only Reference(DeviceCzIps)
+* device only Reference(CZ_Device)
 //* device MS
 //* bodySite only CodeableConceptIPS
 //* bodySite from SNOMEDCTBodyStructures (example)
