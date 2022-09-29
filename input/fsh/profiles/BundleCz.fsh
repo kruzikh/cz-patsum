@@ -1,12 +1,12 @@
-Profile: BundleCzIps
+Profile: CZ_BundlePatSum
 Parent: Bundle
-Id: cz-BundleIps
-Title: "Bundle - CZ IPS"
-Description: "This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide."
-* ^purpose = "An International Patient Summary (IPS) bundle is an electronic health record extract containing essential healthcare information about a subject of care, comprising at least the required elements of the IPS dataset. The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant. As specified in EN 17269 and ISO 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country."
+Id: cz-BundlePatSum
+Title: "Bundle Patient Summary (CZ)"
+Description: "This profile represents the constraints applied to the Bundle resource by the Czech Patient Summary (CZ PS) FHIR Implementation Guide."
+* ^purpose = "A Czech Patient Summary (CZ PS) bundle is an electronic health record extract containing essential healthcare information about a subject of care, comprising at least the required elements of the CZ PS dataset."
 * obeys bdl-ips-1
-* . ^short = "International Patient Summary Bundle"
-* . ^definition = "International Patient Summary Bundle. \r\nA container for a collection of resources in the patient summary document."
+* . ^short = "Czech Patient Summary Bundle"
+* . ^definition = "Czech Patient Summary Bundle. \r\nA container for a collection of resources in the patient summary document."
 * identifier 1.. MS
 * type = #document (exactly)
 * timestamp 1.. MS
@@ -45,16 +45,16 @@ Description: "This profile represents the constraints applied to the Bundle reso
     // observation-pregnancy-edd 0..* and
     // observation-pregnancy-outcome 0..* and
     // observation-pregnancy-status 0..* and
-    //- observation-alcohol-use 0..* and
-    //- observation-tobacco-use 0..* and
-    //- observation-results 0..* and
+    observation-alcohol-use 0..* and
+    observation-tobacco-use 0..* and
+    observation-results 0..* and
     specimen 0..*
 //* entry[composition].resource 1..
 //* entry[composition].resource only CompositionCzIps
 * entry[patient].resource 1..
 * entry[patient].resource only CZ_Patient
 * entry[allergyintolerance].resource 1..
-* entry[allergyintolerance].resource only AllergyIntoleranceCzIps
+* entry[allergyintolerance].resource only CZ_AllergyIntolerance
 // * entry[condition].resource 1..
 // * entry[condition].resource only ConditionUvIps
 * entry[device].resource 1..
@@ -64,7 +64,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 // * entry[diagnosticreport].resource 1..
 // * entry[diagnosticreport].resource only DiagnosticReportUvIps
 * entry[imagingstudy].resource 1..
-* entry[imagingstudy].resource only ImagingStudyCzIps
+* entry[imagingstudy].resource only CZ_ImagingStudy
 // * entry[immunization].resource 1..
 // * entry[immunization].resource only ImmunizationUvIps
 // * entry[media].resource 1..
@@ -89,11 +89,11 @@ Description: "This profile represents the constraints applied to the Bundle reso
 // * entry[observation-pregnancy-outcome].resource only ObservationPregnancyOutcomeUvIps
 // * entry[observation-pregnancy-status].resource 1..
 // * entry[observation-pregnancy-status].resource only ObservationPregnancyStatusUvIps
-//- * entry[observation-alcohol-use].resource 1..
-//- * entry[observation-alcohol-use].resource only ObservationAlcoholUseCzIps
-//- * entry[observation-tobacco-use].resource 1..
-//- * entry[observation-tobacco-use].resource only ObservationTobaccoUseCzIps
-//- * entry[observation-results].resource 1..
-//- * entry[observation-results].resource only ObservationResultsCzIps
+* entry[observation-alcohol-use].resource 1..
+* entry[observation-alcohol-use].resource only CZ_ObservationAlcoholUse
+* entry[observation-tobacco-use].resource 1..
+* entry[observation-tobacco-use].resource only CZ_ObservationTobaccoUse
+* entry[observation-results].resource 1..
+* entry[observation-results].resource only CZ_ObservationResults
 * entry[specimen].resource 1..
-* entry[specimen].resource only SpecimenCzIps
+* entry[specimen].resource only CZ_Specimen

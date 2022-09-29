@@ -1,15 +1,15 @@
-Profile: ObservationPregnancyOutcomeCzIps
-Parent: ObservationPregnancyOutcomeUvIps
-Id: cz-Observation-pregnancy-outcome
-Title: "Observation (Pregnancy: outcome)"
-Description: "This profile constrains the Observation resource to represent the history of pregnancy outcomes (summary)."
-/* * code 1..1 MS
-* code only CodeableConceptIPS
-* code from $pregnancies-summary-uv-ips (required)
-* code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* code ^binding.extension.valueString = "ObservationCode"
-* subject 1.. MS
- */
+Profile: CZ_ObservationPregnancyEdd
+Parent: ObservationPregnancyEddUvIps
+Id: cz-Observation-pregnancy-edd
+Title: "Observation (Pregnancy: EDD)"
+Description: "This profile constrains the Observation resource to represent the pregnancy expected delivery date."
+
+// * code 1..1 MS
+// * code only CodeableConceptIPS
+// * code from $edd-method-uv-ips (required)
+// * code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+// * code ^binding.extension.valueString = "ObservationCode"
+// * subject 1.. MS
 * subject only Reference(CZ_Patient)
 /* * subject.reference 1.. MS
 * effective[x] 1..1 MS
@@ -17,10 +17,12 @@ Description: "This profile constrains the Observation resource to represent the 
 * effective[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
 * effective[x].extension[data-absent-reason] ^short = "effective[x] absence reason"
 * effective[x].extension[data-absent-reason] ^definition = "Provides a reason why the effectiveTime is missing."
-* valueQuantity only Quantity
-* valueQuantity MS
+* valueDateTime only dateTime
+* valueDateTime MS
 * bodySite ..0
 * bodySite ^mustSupport = false
+* method ..0
+* method ^mustSupport = false
 * specimen ..0
 * specimen ^mustSupport = false
 * device ..0

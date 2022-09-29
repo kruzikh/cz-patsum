@@ -1,4 +1,4 @@
-Profile: ObservationPregnancyStatusCzIps
+Profile: CZ_ObservationPregnancyStatus
 Parent: ObservationPregnancyStatusUvIps
 Id: cz-Observation-pregnancy-status
 Title: "Observation (Pregnancy: status)"

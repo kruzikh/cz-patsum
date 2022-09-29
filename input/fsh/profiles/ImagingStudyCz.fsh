@@ -1,7 +1,7 @@
-Profile: ImagingStudyCzIps
+Profile: CZ_ImagingStudy
 Parent: ImagingStudyUvIps
 Id: cz-ImagingStudy
-Title: "Imaging Study (IPS)"
+Title: "Imaging Study (CZ PS)"
 Description: """This profile represents the constraints applied to the ImagingStudy resource by the IPS project, which specifies the information on a DICOM imaging study this imaging result is part of.
 """
 // * ^status = #active
@@ -9,6 +9,7 @@ Description: """This profile represents the constraints applied to the ImagingSt
 // * identifier ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 // * identifier ^extension.valueString = "dicom="
 * subject only Reference(CZ_Patient)
+/*
 * subject MS
 * subject ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * subject ^extension.valueString = "dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.2.2.html"
@@ -32,3 +33,4 @@ Description: """This profile represents the constraints applied to the ImagingSt
 * series.instance.sopClass from $dicom-standard-SOP-classes (extensible)
 * series.instance.sopClass ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * series.instance.sopClass ^binding.extension.valueString = "DicomStandardSOPClasses"
+*/

@@ -1,0 +1,11 @@
+Profile: CZ_PractitionerRole
+Parent: PractitionerRoleUvIps
+Id: cz-PractitionerRole
+Title: "PractitionerRole (CZ PS)"
+Description: "This profile constrains the PractitionerRole resource to represent a practitioner acting as observer for observattion results for a specified organization."
+* ^status = #active
+* ^experimental = false
+* ^publisher = "NCEZ"
+
+* practitioner only Reference(CZ_Organization)
+* organization only Reference(CZ_Organization)
