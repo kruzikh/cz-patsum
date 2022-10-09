@@ -1,4 +1,4 @@
-Profile: CZ_MedicationStatementPS
+Profile: CZ_MedicationStatemenIPS
 Parent: MedicationStatement
 Id: cz-MedicationStatementPS
 Title: "Medication Statement (CZ Patient summary)"
