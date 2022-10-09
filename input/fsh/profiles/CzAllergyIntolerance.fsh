@@ -54,6 +54,7 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * reaction MS
 * reaction.manifestation only CodeableConceptIPS
 * reaction.manifestation MS
+/*
 * reaction.manifestation ^slicing.discriminator.type = #pattern
 * reaction.manifestation ^slicing.discriminator.path = "$this"
 * reaction.manifestation ^slicing.description = "Discriminated by the bound value set"
@@ -65,4 +66,5 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * reaction.manifestation[reactionManifestationGPSCode] ^definition = "Code for an allergy or intolerance reaction manifestation statement that is selected from the SNOMED CT GPS code set."
 * reaction.manifestation[reactionManifestationGPSCode] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * reaction.manifestation[reactionManifestationGPSCode] ^binding.extension.valueString = "ReactionManifestationGPS"
+*/
 * reaction.severity MS
