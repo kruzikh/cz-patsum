@@ -29,17 +29,17 @@ Description: "This profile represents the constraints applied to the Bundle reso
     patient 1..1 and
     allergyintolerance 0..* and
 //     condition 0..* and
-//     device 0..* and
-//     deviceusestatement 0..* and
+    device 0..* and
+    deviceusestatement 0..* and
     diagnosticreport 0..* and
     imagingstudy 0..* and
     immunization 0..* and
-//     media 0..* and
-//     medication 0..* and
-//     medicationrequest 0..* and
-//     medicationstatement 0..* and
-//     practitioner 0..* and
-//     practitionerrole 0..* and
+    media 0..* and
+    medication 0..* and
+    medicationrequest 0..* and
+    medicationstatement 0..* and
+    practitioner 0..* and
+    practitionerrole 0..* and
 //     procedure 0..* and
 //     organization 0..* and
 //     observation-pregnancy-edd 0..* and
@@ -57,28 +57,28 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[allergyintolerance].resource only CZ_AllergyIntolerancePS
 // * entry[condition].resource 1..
 // * entry[condition].resource only CZ_Condition
-// * entry[device].resource 1..
-// * entry[device].resource only CZ_Device
-// * entry[deviceusestatement].resource 1..
-// * entry[deviceusestatement].resource only CZ_DeviceUseStatement
+* entry[device].resource 1..
+* entry[device].resource only CZ_DevicePS
+* entry[deviceusestatement].resource 1..
+* entry[deviceusestatement].resource only CZ_DeviceUseStatementPS
 * entry[diagnosticreport].resource 1..
 * entry[diagnosticreport].resource only CZ_DiagnosticReportPS
 * entry[imagingstudy].resource 1..
 * entry[imagingstudy].resource only CZ_ImagingStudyPS
 * entry[immunization].resource 1..
 * entry[immunization].resource only CZ_ImmunizationPS
-// * entry[media].resource 1..
-// * entry[media].resource only CZ_MediaObservation
-// * entry[medication].resource 1..
-// * entry[medication].resource only CZ_Medication
-// * entry[medicationrequest].resource 1..
-// * entry[medicationrequest].resource only CZ_MedicationRequest
-// * entry[medicationstatement].resource 1..
-// * entry[medicationstatement].resource only CZ_MedicationStatement
-// * entry[practitioner].resource 1..
-// * entry[practitioner].resource only CZ_Practitioner
-// * entry[practitionerrole].resource 1..
-// * entry[practitionerrole].resource only CZ_PractitionerRole
+* entry[media].resource 1..
+* entry[media].resource only CZ_MediaObservationPS
+* entry[medication].resource 1..
+* entry[medication].resource only CZ_MedicationPS
+* entry[medicationrequest].resource 1..
+* entry[medicationrequest].resource only CzMedicationRequestPS
+* entry[medicationstatement].resource 1..
+* entry[medicationstatement].resource only CZ_MedicationStatementPS
+* entry[practitioner].resource 1..
+* entry[practitioner].resource only CZ_Practitioner
+* entry[practitionerrole].resource 1..
+* entry[practitionerrole].resource only CZ_PractitionerRole
 // * entry[procedure].resource 1..
 // * entry[procedure].resource only CZ_Procedure
 // * entry[organization].resource 1..
