@@ -33,7 +33,8 @@ publisher:
 dependencies:
   hl7.fhir.uv.ips: current
   hl7.fhir.us.mcode: current
-  ncez.fhir.cz.core: dev
+  ncez.fhir.cz.core: current
+  ncez.fhir.cz.lab: current
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
