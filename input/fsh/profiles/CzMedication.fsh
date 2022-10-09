@@ -38,11 +38,11 @@ Description: "This profile represents the constraints applied to the Medication 
 * form from $medicine-doseform (preferred)
 * form ^definition = "Describes the form of the item.  Powder; tablets; capsule.\r\n\r\nAdministrable Pharmaceutical Dose Form. \r\nThis code represents the form of the medication (e.g. tablet, capsule, liquid)\r\n\r\nSince the EDQM Standards Terms, together with UCUM, is one of the IDMP terminologies actually available for usage, this code system has been selected as referecne terminology for representing Pharmaceutical Dose forms;Pakages and Route of Administration.\r\n\r\nIt is known that also alternative jurisdictional and international terminologies are known to be used for this concept domain, as NCI or SNOMED CT."
 * ingredient MS
-// * ingredient.itemCodeableConcept only CodeableConceptIPS
+* ingredient.itemCodeableConcept only CodeableConceptIPS
 * ingredient.itemCodeableConcept MS
 * ingredient.itemCodeableConcept from $medicine-active-substances-uv-ips (preferred)
 * ingredient.itemCodeableConcept ^comment = "The IDMP ISO 11238 standard addresses the identification and exchange of regulated information on substances. \r\nThe Global Ingredient Archival System (GInAS) will provide a common global identifier for all of the substances used in medicinal products, providing a definition of substances globally consistent with this standard.\r\nThose identifiers however are yet available for concrete usage, therefore in this version of the template, SNOMED CT has been chosen as reference terminology also for the active substances.\r\nThis choice will be revised based on the availability and the maturity of GInAS."
 * ingredient.itemCodeableConcept ^binding.description = "SNOMED CT drug substances"
 * ingredient.itemCodeableConcept.text MS
-//* ingredient.strength only RatioIPS
+* ingredient.strength only RatioIPS
 * ingredient.strength MS
