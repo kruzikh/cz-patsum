@@ -45,8 +45,8 @@ Description: "This profile represents the constraints applied to the Bundle reso
 //     observation-pregnancy-edd 0..* and
 //     observation-pregnancy-outcome 0..* and
 //     observation-pregnancy-status 0..* and
-//     observation-alcohol-use 0..* and
-//     observation-tobacco-use 0..* and
+    observation-alcohol-use 0..* and
+    observation-tobacco-use 0..* and
 //     observation-results 0..* and
     specimen 0..*
 // * entry[composition].resource 1..
@@ -89,10 +89,10 @@ Description: "This profile represents the constraints applied to the Bundle reso
 // * entry[observation-pregnancy-outcome].resource only CZ_ObservationPregnancyOutcome
 // * entry[observation-pregnancy-status].resource 1..
 // * entry[observation-pregnancy-status].resource only CZ_ObservationPregnancyStatus
-// * entry[observation-alcohol-use].resource 1..
-// * entry[observation-alcohol-use].resource only CZ_ObservationAlcoholUse
-// * entry[observation-tobacco-use].resource 1..
-// * entry[observation-tobacco-use].resource only CZ_ObservationTobaccoUse
+* entry[observation-alcohol-use].resource 1..
+* entry[observation-alcohol-use].resource only CZ_ObservationAlcoholUse
+* entry[observation-tobacco-use].resource 1..
+* entry[observation-tobacco-use].resource only CZ_ObservationTobaccoUse
 // * entry[observation-results].resource 1..
 // * entry[observation-results].resource only CZ_ObservationResults
 * entry[specimen].resource 1..

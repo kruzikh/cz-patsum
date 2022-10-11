@@ -3,7 +3,7 @@
 // zde přijdou případné vlastní aliasy pro CZ Patient summary na vlastní valuesets nebo codesystems
 
 // Aliases base on project HL7/fhir-ips - International Patient Summary (IPS) FHIR Implementation Guide Repository
-// Alias: $loinc = http://loinc.org
+Alias: $loinc = http://loinc.org
 // Alias: $v3-ActClass = http://terminology.hl7.org/CodeSystem/v3-ActClass
 // Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 // Alias: $clinicaldocument = http://hl7.org/fhir/StructureDefinition/clinicaldocument
@@ -44,7 +44,7 @@ Alias: $absent-or-unknown-medications-uv-ips = http://hl7.org/fhir/uv/ips/ValueS
 // Alias: $result-coded-value-pathology-gps-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-pathology-gps-uv-ips
 // Alias: $results-radiology-txtobs-gps-dicom-loinc-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/results-radiology-txtobs-gps-dicom-loinc-uv-ips
 // Alias: $results-radiology-numobs-gps-dicom-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/results-radiology-numobs-gps-dicom-uv-ips
-// Alias: $current-smoking-status-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips
+Alias: $current-smoking-status-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips
 // Alias: $v3-PersonalRelationshipRoleType = http://terminology.hl7.org/ValueSet/v3-PersonalRelationshipRoleType
 // Alias: $healthcare-professional-roles-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/healthcare-professional-roles-uv-ips
 // Alias: $procedures-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips
