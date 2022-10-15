@@ -40,14 +40,14 @@ Description: "This profile represents the constraints applied to the Bundle reso
     medicationstatement 0..* and
     practitioner 0..* and
     practitionerrole 0..* and
-//     procedure 0..* and
-//     organization 0..* and
-//     observation-pregnancy-edd 0..* and
-//     observation-pregnancy-outcome 0..* and
-//     observation-pregnancy-status 0..* and
+    procedure 0..* and
+    organization 0..* and
+    observation-pregnancy-edd 0..* and
+    observation-pregnancy-outcome 0..* and
+    observation-pregnancy-status 0..* and
     observation-alcohol-use 0..* and
     observation-tobacco-use 0..* and
-//     observation-results 0..* and
+    observation-results 0..* and
     specimen 0..*
 // * entry[composition].resource 1..
 // * entry[composition].resource only CZ_Composition
@@ -79,21 +79,21 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[practitioner].resource only CZ_Practitioner
 * entry[practitionerrole].resource 1..
 * entry[practitionerrole].resource only CZ_PractitionerRole
-// * entry[procedure].resource 1..
-// * entry[procedure].resource only CZ_Procedure
-// * entry[organization].resource 1..
-// * entry[organization].resource only CZ_Organization
-// * entry[observation-pregnancy-edd].resource 1..
-// * entry[observation-pregnancy-edd].resource only CZ_ObservationPregnancyEdd
-// * entry[observation-pregnancy-outcome].resource 1..
-// * entry[observation-pregnancy-outcome].resource only CZ_ObservationPregnancyOutcome
-// * entry[observation-pregnancy-status].resource 1..
-// * entry[observation-pregnancy-status].resource only CZ_ObservationPregnancyStatus
+* entry[procedure].resource 1..
+* entry[procedure].resource only CZ_ProcedurePS
+* entry[organization].resource 1..
+* entry[organization].resource only CZ_Organization
+* entry[observation-pregnancy-edd].resource 1..
+* entry[observation-pregnancy-edd].resource only CZ_ObservationPregnancyEddPS
+* entry[observation-pregnancy-outcome].resource 1..
+* entry[observation-pregnancy-outcome].resource only CZ_ObservationPregnancyOutcomePS
+* entry[observation-pregnancy-status].resource 1..
+* entry[observation-pregnancy-status].resource only CZ_ObservationPregnancyStatusPS
 * entry[observation-alcohol-use].resource 1..
-* entry[observation-alcohol-use].resource only CZ_ObservationAlcoholUse
+* entry[observation-alcohol-use].resource only CZ_ObservationAlcoholUsePS
 * entry[observation-tobacco-use].resource 1..
-* entry[observation-tobacco-use].resource only CZ_ObservationTobaccoUse
-// * entry[observation-results].resource 1..
-// * entry[observation-results].resource only CZ_ObservationResults
+* entry[observation-tobacco-use].resource only CZ_ObservationTobaccoUsePS
+* entry[observation-results].resource 1..
+* entry[observation-results].resource only CZ_ObservationResultsPS
 * entry[specimen].resource 1..
 * entry[specimen].resource only CZ_SpecimenPS

@@ -1,6 +1,6 @@
-Profile: CZ_ObservationAlcoholUse
+Profile: CZ_ObservationAlcoholUsePS
 Parent: Observation
-Id: cz-ObservationAlcoholUse
+Id: cz-ObservationAlcoholUsePS
 Title: "Observation (SH: alcohol use)"
 Description: "This profile constrains the Observation resource to represent alcohol use assessment in a patient summary."
 

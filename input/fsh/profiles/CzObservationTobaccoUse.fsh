@@ -1,6 +1,6 @@
-Profile: CZ_ObservationTobaccoUse
+Profile: CZ_ObservationTobaccoUsePS
 Parent: Observation
-Id: cz-ObservationTobaccoUse
+Id: cz-ObservationTobaccoUsePS
 Title: "Observation (SH: tobacco use)"
 Description: "This profile constrains the Observation resource to represent Tobacco use assessment in a patient summary."
 
