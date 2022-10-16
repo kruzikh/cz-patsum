@@ -4,21 +4,21 @@
 
 // Aliases base on project HL7/fhir-ips - International Patient Summary (IPS) FHIR Implementation Guide Repository
 Alias: $loinc = http://loinc.org
-// Alias: $v3-ActClass = http://terminology.hl7.org/CodeSystem/v3-ActClass
+Alias: $v3-ActClass = http://terminology.hl7.org/CodeSystem/v3-ActClass
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
-// Alias: $clinicaldocument = http://hl7.org/fhir/StructureDefinition/clinicaldocument
+Alias: $clinicaldocument = http://hl7.org/fhir/StructureDefinition/clinicaldocument
 
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $abatement-dateTime-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips
-// Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
+Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 // Alias: $medication-example-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/medication-example-uv-ips
 Alias: $medicine-route-of-administration = http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration
 Alias: $allergy-intolerance-substance-condition-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips
 Alias: $allergy-intolerance-substance-condition-gps-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-gps-uv-ips
 Alias: $absent-or-unknown-allergies-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips
 Alias: $allergy-reaction-gps-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-gps-uv-ips
-// Alias: $problem-type-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips
-// Alias: $condition-severity-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips
+Alias: $problem-type-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips
+Alias: $condition-severity-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips
 // Alias: $core-problem-finding-situation-event-gps-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/core-problem-finding-situation-event-gps-uv-ips
 // Alias: $medical-devices-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips
 // Alias: $absent-or-unknown-devices-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-devices-uv-ips

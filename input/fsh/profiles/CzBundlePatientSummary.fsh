@@ -25,10 +25,10 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry.request ..0
 * entry.response ..0
 * entry contains
-//     composition 1..1 and
+    composition 1..1 and
     patient 1..1 and
     allergyintolerance 0..* and
-//     condition 0..* and
+    condition 0..* and
     device 0..* and
     deviceusestatement 0..* and
     diagnosticreport 0..* and
@@ -49,14 +49,14 @@ Description: "This profile represents the constraints applied to the Bundle reso
     observation-tobacco-use 0..* and
     observation-results 0..* and
     specimen 0..*
-// * entry[composition].resource 1..
-// * entry[composition].resource only CZ_Composition
+* entry[composition].resource 1..
+* entry[composition].resource only CZ_CompositionPS
 * entry[patient].resource 1..
 * entry[patient].resource only CZ_Patient
 * entry[allergyintolerance].resource 1..
 * entry[allergyintolerance].resource only CZ_AllergyIntolerancePS
-// * entry[condition].resource 1..
-// * entry[condition].resource only CZ_Condition
+* entry[condition].resource 1..
+* entry[condition].resource only CZ_ConditionPS
 * entry[device].resource 1..
 * entry[device].resource only CZ_DevicePS
 * entry[deviceusestatement].resource 1..
