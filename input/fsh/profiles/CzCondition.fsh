@@ -25,30 +25,32 @@ Description: "This profile represents the constraints applied to the Condition r
 * severity from $condition-severity-uv-ips (preferred)
 * severity ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * severity ^binding.extension.valueString = "ConditionSeverity"
+
 * code 1..1 MS
-* code only CodeableConceptIPS
-/*
-* code ^slicing.discriminator.type = #pattern
-* code ^slicing.discriminator.path = "$this"
-* code ^slicing.description = "Discriminated by the bound value set"
-* code ^slicing.rules = #open
-* code ^definition = "Identification of the condition, problem or diagnosis or recording of \"problem absent\" or of \"problems unknown\"."
-* code contains
-    problemGPSCode 0..1 MS and
+* code only CodeableConcept
+
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.description = "Discriminated by the bound value set"
+* code.coding ^slicing.rules = #open
+* code.coding ^definition = "Identification of the condition, problem or diagnosis or recording of \"problem absent\" or of \"problems unknown\"."
+* code.coding contains
+    MKN-10 0..1 MS and
     absentOrUnknownProblem 0..1 MS
-* code[problemGPSCode] from $core-problem-finding-situation-event-gps-uv-ips (required)
-* code[problemGPSCode] ^short = "Code for a problem from the SNOMED CT GPS code set"
-* code[problemGPSCode] ^definition = "Code for a clinical problem that is selected from the SNOMED CT GPS code set."
-* code[problemGPSCode] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* code[problemGPSCode] ^binding.extension.valueString = "problemGPSCode"
-* code[problemGPSCode] ^binding.description = "problemGPS"
-* code[absentOrUnknownProblem] from $absent-or-unknown-problems-uv-ips (required)
-* code[absentOrUnknownProblem] ^short = "Code for absent problem or for unknown problem"
-* code[absentOrUnknownProblem] ^definition = "Code representing the statement \"absent problem\" or the statement \"problems unknown\""
-* code[absentOrUnknownProblem] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* code[absentOrUnknownProblem] ^binding.extension.valueString = "absentOrUnknownProblem"
-* code[absentOrUnknownProblem] ^binding.description = "Absent problem or unknown problem"
-*/
+* code.coding[MKN-10] from $mkn-10-problem-list (required)
+* code.coding[MKN-10].system = $mkn-10 (exactly)
+* code.coding[MKN-10] ^short = "Code for a problem from the MKN-10 problem list (includes all MKN-10 codes except chapter XX) value set"
+* code.coding[MKN-10] ^definition = "Code for a clinical problem that is selected from the MKN-10 problem list."
+* code.coding[MKN-10] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* code.coding[MKN-10] ^binding.extension.valueString = "MKN-10"
+* code.coding[MKN-10] ^binding.description = "MKN-10-problem-list"
+* code.coding[absentOrUnknownProblem] from $absent-or-unknown-problems-uv-ips (required)
+* code.coding[absentOrUnknownProblem] ^short = "Code for absent problem or for unknown problem"
+* code.coding[absentOrUnknownProblem] ^definition = "Code representing the statement \"absent problem\" or the statement \"problems unknown\""
+* code.coding[absentOrUnknownProblem] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* code.coding[absentOrUnknownProblem] ^binding.extension.valueString = "absentOrUnknownProblem"
+* code.coding[absentOrUnknownProblem] ^binding.description = "Absent problem or unknown problem"
+
 * bodySite only CodeableConceptIPS
 * bodySite from SNOMEDCTBodyStructures (example)
 * bodySite ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
