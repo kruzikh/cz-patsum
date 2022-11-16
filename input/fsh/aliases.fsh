@@ -7,10 +7,12 @@ Alias: $loinc = http://loinc.org
 Alias: $v3-ActClass = http://terminology.hl7.org/CodeSystem/v3-ActClass
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $clinicaldocument = http://hl7.org/fhir/StructureDefinition/clinicaldocument
-
+Alias: $mkn-10 = https://mkn10.uzis.cz
+Alias: $mkn-10-problem-list = https://terminology.ncez.mzcr.cz/ValueSet/mkn-10
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $abatement-dateTime-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips
 Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
+Alias: $absent-or-unknown-problems-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips
 // Alias: $medication-example-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/medication-example-uv-ips
 Alias: $medicine-route-of-administration = http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration
 Alias: $allergy-intolerance-substance-condition-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips
