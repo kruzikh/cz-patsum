@@ -33,8 +33,8 @@ publisher:
 dependencies:
   hl7.fhir.uv.ips: current
   hl7.fhir.us.mcode: current
-  ncez.fhir.cz.core: current
-  ncez.fhir.cz.lab: current
+  ncez.cz.fhir.core: current
+  ncez.cz.fhir.lab: current
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
@@ -78,7 +78,22 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Obsah: toc.html
+  Základní principy a konvence:
+    Základní principy návrhu: principles.html
+    Konvence návrhu: design.html
+  Pacientský souhrn:
+    Struktura pacientského souhrnu: Struktura_PS.html
+    Logické modely: models.html
+  Seznam artefaktů:
+    Profily: profiles.html
+    Datové typy: datatypes.html
+    Extenze: extensions.html
+    Terminologie: terminology.html
+    Příklady: examples.html
+  Downloads: downloads.html
+  Copyrights: copyrights.html
+#  Change log: changes.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

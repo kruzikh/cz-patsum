@@ -24,7 +24,7 @@ Description: "This profile constrains the DiagnosticReport resource to represent
 * effective[x].extension[data-absent-reason] ^definition = "Provides a reason why the effectiveTime is missing."
 * performer only Reference(CZ_Practitioner or CZ_PractitionerRole or CZ_Organization or CareTeam)
 * performer MS
-* specimen only Reference(CZ_SpecimenLaboratory)
+* specimen only Reference(CZ_SpecimenLab)
 * specimen ^mustSupport = false
 * result MS
 * result ^slicing.discriminator.type = #profile
